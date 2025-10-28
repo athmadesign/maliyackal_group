@@ -1,0 +1,261 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Maliyackal Group | {% block title %}{% endblock title %} </title>
+
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}" />
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}" />
+    <meta name="description" content="tecture HTML 5 Template " />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom-animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/font-awesome-all.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jarallax.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jquery.magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/odometer.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/twentytwenty.css' %}" />
+
+    <!-- Module CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/module-css/slider.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/footer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/feature.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/sliding-text.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/services.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/projects.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/design-interior.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/testimonial.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/video.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/awards.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/blog.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/brand.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/counter.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/team.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/module-css/contact.css' %}" />
+    <link rel="stylesheet" href="{% static "css/module-css/page-header.css" %}" />
+    <link rel="stylesheet" href="{% static "css/module-css/error-page.css" %}" />
+    <link rel="stylesheet" href="{% static "css/module-css/google-map.css" %}" />
+    <link rel="stylesheet" href="{% static "css/module-css/united-kingdom.css" %}" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+</head>
+
+
+<body class="body-bg-color-1">
+
+
+
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
+
+    <div class="chat-icon"><button type="button" class="chat-toggler"><i class="fa fa-comment"></i></button></div>
+    <!--Chat Popup-->
+    <div id="chat-popup" class="chat-popup">
+        <div class="popup-inner">
+            <div class="close-chat"><i class="fa fa-times"></i></div>
+            <div class="chat-form">
+                <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+                <form action="https://weblayout.mnsithub.com/html/tecture/main-html/inc/sendemail.php" method="POST" class="contact-form-validated">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Text"></textarea>
+                    </div>
+                    <div class="form-group message-btn">
+                        <button type="submit" class="thm-btn">Submit <span class="icon-up-right-arrow"></span> </button>
+                    </div>
+                    <div class="result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme-border-left"></div>
+    <div class="theme-border-right"></div>
+
+
+    <!-- Start sidebar widget content -->
+    <div class="xs-sidebar-group info-group info-sidebar">
+        <div class="xs-overlay xs-bg-black"></div>
+        <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+                <div class="widget-heading">
+                    <a href="#" class="close-side-widget">X</a>
+                </div>
+                <div class="sidebar-textwidget">
+                    <div class="sidebar-info-contents">
+                        <div class="content-inner">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/resources/logo-1.png" alt="" /></a>
+                            </div>
+                            <div class="content-box">
+                                <h4>About Us</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
+                                    labore et magna aliqua.</p>
+                            </div>
+                            <div class="form-inner">
+                                <h4>Get a free quote</h4>
+                                <form action="https://weblayout.mnsithub.com/html/tecture/main-html/inc/sendemail.php" class="contact-form-validated">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Name" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" placeholder="Message..." required></textarea>
+                                    </div>
+                                    <div class="form-group message-btn">
+                                        <button type="submit" class="thm-btn form-inner__btn">Submit Now</button>
+                                    </div>
+                                    <div class="result"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End sidebar widget content -->
+
+
+        
+        {% include "partials/nav.html" %}
+
+
+        {% block content %}{% endblock content %}
+
+        {% include "partials/footer.html" %}
+
+
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="images/resources/logo-4.png" width="150"
+                        alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@packageName__.com">needhelp@tecture.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+        <span class="scroll-to-top__text"> Go Back Top</span>
+    </a>
+
+
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jarallax.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.appear.min.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/jquery.circle-progress.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/odometer.min.js' %}"></script>
+<script src="{% static 'js/wNumb.min.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/isotope.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/jquery.circleType.js' %}"></script>
+<script src="{% static 'js/jquery.lettering.min.js' %}"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/marquee.min.js' %}"></script>
+<script src="{% static 'js/countdown.min.js' %}"></script>
+<script src="{% static 'js/jquery-sidebar-content.js' %}"></script>
+<script src="{% static 'js/twentytwenty.js' %}"></script>
+<script src="{% static 'js/jquery.event.move.js' %}"></script>
+<script src="{% static 'js/gsap/gsap.js' %}"></script>
+<script src="{% static 'js/gsap/ScrollTrigger.js' %}"></script>
+<script src="{% static 'js/gsap/SplitText.js' %}"></script>
+
+<!-- Template JS -->
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
