@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}Contact{% endblock title %}
+{% block title %}Projects{% endblock title %}
 
 {% block content %}
 
@@ -14,14 +14,14 @@
             <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});">
             </div>
             <div class="container">
+                
                 <div class="page-header__inner">
                     <div class="page-header__title-box">
-                        <p>Business Models you can Consider</p>
                         <h3>Projects</h3>
                     </div>
                     <div class="thm-breadcrumb__box">
                         <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{% url "home" %}">Home</a></li>
                             <li><span>/</span></li>
                             <li>Projects</li>
                         </ul>
@@ -35,6 +35,11 @@
         <section class="projects-page">
             <div class="section-shape-1" style="background-image: url({% static 'images/shapes/section-shape-1.png' %});"></div>
             <div class="container">
+                <div class="section-title text-center sec-title-animation animation-style1">
+                    <h2 class="section-title__title title-animation">
+                        SHOWCASING STRUCTURES <br> BUILT TO INSPIRE
+                    </h2>
+                </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="project-two__single">

@@ -1,13 +1,17 @@
 from django.shortcuts import render
+from .models import Slider, Testimonial
 
-
-# Create your views here.
 
 def home(requests):
-    return render(requests, 'core/index.html')
+    sliders = Slider.objects.all()
+    testimonials = Testimonial.objects.all()
+    context = {'sliders': sliders, 'testimonials': testimonials}
+    return render(requests, 'core/index.html', context)
 
 def about(requests):
-    return render(requests, 'core/about.html')
+    testimonials = Testimonial.objects.all()
+    context = {'testimonials': testimonials}
+    return render(requests, 'core/about.html', context)
 
 def contact(requests):
     return render(requests, 'core/contact.html')
@@ -17,3 +21,6 @@ def services(requests):
 
 def projects(requests):
     return render(requests, 'core/projects.html')
+
+def service_detail(requests):
+    return render(requests, 'core/service_detail.html')

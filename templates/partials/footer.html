@@ -2,141 +2,114 @@
 
 <!--Site Footer Start-->
         <footer class="site-footer">
-            <div class="site-footer__shape-1 float-bob-x">
-                <img src="{% static 'images/shapes/site-footer-shape-1.png' %}" alt="">
-            </div>
-            <div class="site-footer__shape-2 float-bob-y">
-                <img src="{% static 'images/shapes/site-footer-shape-2.png' %}" alt="">
-            </div>
+    <div class="site-footer__shape-1 float-bob-x">
+        <img src="{% static 'images/shapes/site-footer-shape-1.png' %}" alt="">
+    </div>
+    <div class="site-footer__shape-2 float-bob-y">
+        <img src="{% static 'images/shapes/site-footer-shape-2.png' %}" alt="">
+    </div>
 
-            <div class="site-footer__marquee">
-                <ul class="marquee_mode">
-                    <li>Interior Design</li>
-                    <li>luxury homes</li>
-                    <li>construction simulator</li>
-                </ul>
-            </div>
+   
 
-            <div class="container">
-                <div class="site-footer__top">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                            <div class="footer-widget__column footer-widget__about">
-                                <div class="footer-widget__logo">
-                                    <a href="{% url "home" %}"><img src="{% static "images/resources/m_logo.png" %}" style="width: 100px"  alt=""></a>
-                                </div>
-                                <p class="footer-widget__about-text">Eros vivamus platea nullam id consequat eu sociis
-                                    lectus aliquam nibh auctor elitsed libero pharetra consequat and fad sociis conubia
-                                    favorite to risus.</p>
-                                <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+    <div class="container">
+        <div class="site-footer__top">
+            <div class="row">
+                <!-- Logo and About -->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="footer-widget__column footer-widget__about">
+                        <div class="footer-widget__logo">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'images/resources/m_logo.png' %}" style="width: 100px" alt="Maliyackal Group">
+                            </a>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                            <div class="footer-widget__column footer-widget__usefull-link">
-                                <div class="footer-widget__title-box">
-                                    <h3 class="footer-widget__title">Useful Links</h3>
-                                </div>
-                                <div class="footer-widget__link-box">
-                                    <ul class="footer-widget__link list-unstyled">
-                                        <li><a href="contact.html">Our Support</a></li>
-                                        <li><a href="about.html">System Status</a></li>
-                                        <li><a href="about.html">Knowledge base</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                        <li><a href="contact.html">Write For Us</a></li>
-                                    </ul>
-                                    <ul class="footer-widget__link footer-widget__link-2 list-unstyled">
-                                        <li><a href="about.html">Ebooks</a></li>
-                                        <li><a href="about.html">Cloudways Users</a></li>
-                                        <li><a href="about.html">Group</a></li>
-                                        <li><a href="about.html">Customer Voice</a></li>
-                                        <li><a href="about.html">Properties Right</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="footer-widget__column footer-widget__services">
-                                <div class="footer-widget__title-box">
-                                    <h3 class="footer-widget__title">Our Services</h3>
-                                </div>
-                                <ul class="footer-widget__link list-unstyled">
-                                    <li><a href="harmony-interiors.html">Harmony Interiors</a></li>
-                                    <li><a href="about.html">Amman Rotane Hotel</a></li>
-                                    <li><a href="about.html">European Lard Sration</a></li>
-                                    <li><a href="evolve-space-designs.html">Evolve Space Designs</a></li>
-                                    <li><a href="eden-home-styling.html">Eden Home Styling</a></li>
-                                    <li><a href="interior-design.html">Interior Design </a></li>
-                                    <li><a href="urban-design.html">Human Resources</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                            <div class="footer-widget__column footer-widget__instagram">
-                                <div class="footer-widget__title-box">
-                                    <h3 class="footer-widget__title">Instagram</h3>
-                                </div>
-                                <ul class="footer-widget__instagram-list list-unstyled clearfix">
-                                    <li>
-                                        <div class="footer-widget__instagram-img">
-                                            <img src="{% static 'images/resources/footer-widget-instagram-img-1.jpg' %}" alt="">
-                                            <a href="#"><span class="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="footer-widget__instagram-img">
-                                            <img src="{% static 'images/resources/footer-widget-instagram-img-2.jpg' %}" alt="">
-                                            <a href="#"><span class="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="footer-widget__instagram-img">
-                                            <img src="{% static 'images/resources/footer-widget-instagram-img-3.jpg' %}" alt="">
-                                            <a href="#"><span class="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="footer-widget__instagram-img">
-                                            <img src="{% static 'images/resources/footer-widget-instagram-img-4.jpg' %}" alt="">
-                                            <a href="#"><span class="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="footer-widget__instagram-img">
-                                            <img src="{% static 'images/resources/footer-widget-instagram-img-5.jpg' %}" alt="">
-                                            <a href="#"><span class="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="footer-widget__instagram-img">
-                                            <img src="{% static 'images/resources/footer-widget-instagram-img-6.jpg' %}" alt="">
-                                            <a href="#"><span class="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                        <p class="footer-widget__about-text">
+                            Your trusted construction partner, delivering durable solutions and lasting value.
+                        </p>
+                        <div class="site-footer__social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="site-footer__bottom">
-                <div class="container">
-                    <div class="site-footer__bottom-inner">
-                        <p class="site-footer__bottom-text">© 2024
-                            Copyright <a href="#">Tecture.</a> | All rights reserved</p>
-                        <ul class="list-unstyled site-footer__bottom-menu">
-                            <li><a href="about.html">Privacy & Policy</a></li>
-                            <li><a href="about.html">Terms of use</a></li>
-                            <li><a href="about.html">Cookie Policy</a></li>
+
+                <!-- Useful Links -->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="footer-widget__column footer-widget__usefull-link">
+                        <div class="footer-widget__title-box">
+                            <h3 class="footer-widget__title">Useful Links</h3>
+                        </div>
+                        <div class="footer-widget__link-box">
+                            <ul class="footer-widget__link list-unstyled">
+                                <li><a href="{% url 'contact' %}">Our Support</a></li>
+                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'projects' %}">Projects</a></li>
+                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Services -->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="footer-widget__column footer-widget__services">
+                        <div class="footer-widget__title-box">
+                            <h3 class="footer-widget__title">Our Services</h3>
+                        </div>
+                        <ul class="footer-widget__link list-unstyled">
+                            <li><a href="interior-design.html">Interior Design</a></li>
+                            <li><a href="residential.html">Residential Construction</a></li>
+                            <li><a href="commercial.html">Commercial Projects</a></li>
+                            <li><a href="renovation.html">Renovation Works</a></li>
+                            <li><a href="consulting.html">Construction Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="footer-widget__column footer-widget__contact">
+                        <div class="footer-widget__title-box">
+                            <h3 class="footer-widget__title">Contact Us</h3>
+                        </div>
+                        <ul class="footer-widget__contact-list list-unstyled">
+                            <li>
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <div class="text"><a href="tel:+919876543210">+91 98765 43210</a></div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div class="text"><a href="mailto:info@maliyackalgroup.com">info@maliyackalgroup.com</a></div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="text">Maliyackal Group, Kochi, Kerala, India</div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="site-footer__bottom">
+        <div class="container">
+            <div class="site-footer__bottom-inner">
+                <p class="site-footer__bottom-text">© 2024 Copyright 
+                    <a href="#">Maliyackal Group</a> | All rights reserved
+                </p>
+                <ul class="list-unstyled site-footer__bottom-menu">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
         <!--Site Footer End-->
 

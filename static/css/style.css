@@ -24,7 +24,7 @@
   --tecture-gray-rgb: 182, 182, 182;
   --tecture-white: #ffffff;
   --tecture-white-rgb: 255, 255, 255;
-  --tecture-base: #a6a182;
+  --tecture-base: #C1856D;
   --tecture-base-rgb: 166, 161, 130;
   --tecture-black: #a9120b;
   --tecture-black-rgb: 31, 32, 34;
@@ -1858,7 +1858,7 @@ li {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.05);
+  /* background-color: rgba(255, 255, 255, 0.05); */
   padding: 17.5px 45px;
   gap: 20px;
   border-radius: 10px;
@@ -1919,8 +1919,8 @@ li {
 
 .main-menu-two .main-menu__list>li,
 .stricky-header.main-menu-two .main-menu__list>li {
-  padding-top: 47px;
-  padding-bottom: 47px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .main-menu-two .main-menu__list>li.dropdown>a:after {

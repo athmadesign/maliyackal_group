@@ -6,7 +6,7 @@
     display: block;
     background-color: var(--tecture-black);
     overflow: hidden;
-    padding-top: 120px;
+    padding-top: 10px;
     z-index: 1;
 }
 
@@ -921,13 +921,35 @@
 
 
 
-
-
-
-
-
-
-
-
-
 /**  End Css  **/
+
+/* Keep footer contact links the same color */
+.footer-widget__contact-list a {
+  color: inherit;           /* Same as surrounding text */
+  text-decoration: none;    /* Removes underline */
+  transition: all 0.3s ease;
+}
+
+/* On hover – keep the same color or slightly lighten */
+.footer-widget__contact-list a:hover {
+  color: var(--tecture-base);           /* Or use your footer text color */
+  text-decoration: none;
+}
+
+/* Optional: style the icons for better alignment */
+.footer-widget__contact-list .icon {
+  display: inline-block;
+  width: 25px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer-widget__contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.footer-widget__contact-list .text {
+  margin-left: 8px;
+}
