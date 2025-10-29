@@ -16,11 +16,6 @@ def about(requests):
 def contact(requests):
     return render(requests, 'core/contact.html')
 
-def services(requests):
-    return render(requests, 'core/services.html')
 
-def projects(requests):
-    return render(requests, 'core/projects.html')
-
-def service_detail(requests):
-    return render(requests, 'core/service_detail.html')
+def custom_404(request, exception):
+    return render(request, 'core/404.html', status=404)

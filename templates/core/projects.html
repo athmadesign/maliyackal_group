@@ -41,96 +41,23 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
+                    {% for project in projects %}
+                        <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="project-two__single">
                             <div class="project-two__img">
-                                <img src="{% static 'images/project/projects-2-1.jpg' %}" alt="">
+                                <img src="{{ project.thumbnail.url }}" alt="">
                             </div>
                             <div class="project-two__content">
-                                <h3 class="project-two__title"><a href="project-details.html">Industrial Chic
-                                        Restaurant</a></h3>
+                                <h3 class="project-two__title"><a href="{% url "project_detail" project.slug %}">{{ project.title }}</a></h3>
                                 <div class="project-two__arrow">
-                                    <a href="{% static 'images/project/projects-2-1.jpg' %}" class="img-popup"><span
+                                    <a href="{{ project.thumbnail.url}}" class="img-popup"><span
                                             class="icon-up-right-arrow-1"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="{% static 'images/project/projects-2-2.jpg' %}" alt="">
-                            </div>
-                            <div class="project-two__content">
-                                <h3 class="project-two__title"><a href="project-details.html">Amman Rotane Hotel</a>
-                                </h3>
-                                <div class="project-two__arrow">
-                                    <a href="{% static 'images/project/projects-2-2.jpg' %}" class="img-popup"><span
-                                            class="icon-up-right-arrow-1"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="{% static 'images/project/projects-2-3.jpg' %}" alt="">
-                            </div>
-                            <div class="project-two__content">
-                                <h3 class="project-two__title"><a href="project-details.html">Harmony Interiors</a>
-                                </h3>
-                                <div class="project-two__arrow">
-                                    <a href="{% static 'images/project/projects-2-3.jpg' %}" class="img-popup"><span
-                                            class="icon-up-right-arrow-1"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="{% static 'images/project/projects-2-4.jpg' %}" alt="">
-                            </div>
-                            <div class="project-two__content">
-                                <h3 class="project-two__title"><a href="project-details.html">Harmony Interiors</a></h3>
-                                <div class="project-two__arrow">
-                                    <a href="{% static 'images/project/projects-2-4.jpg' %}" class="img-popup"><span
-                                            class="icon-up-right-arrow-1"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="{% static 'images/project/projects-2-5.jpg' %}" alt="">
-                            </div>
-                            <div class="project-two__content">
-                                <h3 class="project-two__title"><a href="project-details.html">Amman Rotane Hotel</a>
-                                </h3>
-                                <div class="project-two__arrow">
-                                    <a href="{% static 'images/project/projects-2-5.jpg' %}" class="img-popup"><span
-                                            class="icon-up-right-arrow-1"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="project-two__single">
-                            <div class="project-two__img">
-                                <img src="{% static 'images/project/projects-2-6.jpg' %}" alt="">
-                            </div>
-                            <div class="project-two__content">
-                                <h3 class="project-two__title"><a href="project-details.html">Industrial Chic
-                                        Restaurant</a>
-                                </h3>
-                                <div class="project-two__arrow">
-                                    <a href="{% static 'images/project/projects-2-6.jpg' %}" class="img-popup"><span
-                                            class="icon-up-right-arrow-1"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+                    
                 </div>
             </div>
         </section>

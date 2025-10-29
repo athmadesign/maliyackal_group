@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'core',
     'services',
     'projects',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -123,7 +125,12 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Used in production for collectstatic
 
 
+MEDIA_URL = '/media/'                # URL prefix for serving media files
+MEDIA_ROOT = BASE_DIR / 'media'      
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
